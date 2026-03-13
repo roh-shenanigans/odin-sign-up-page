@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: "Inter", sans-serif, system-ui, system-ui;
+    font-family: "Roboto", sans-serif, system-ui ;
 }
 
 *:not(dialog) {
@@ -37,7 +37,6 @@ body {
 
 .left-sidebar {
     background-image: url("imgs/milad-fakurian-E8Ufcyxz514-unsplash.jpg");
-    filter: brightness(90%);
     background-size: cover;
     flex: 3.5;
 
@@ -46,18 +45,14 @@ body {
     justify-content: space-between;
 }
 
-.right-content {
-    flex: 7;
-}
-
 .sidebar-heading {
-    margin-top: 25vh;
+    margin-top: 17.5vh;
     flex: 0 0 var(--heading-font);
     display: flex;
     background-color: rgb(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 5px;
 }
 
 .heading {
@@ -79,4 +74,83 @@ body {
 
 .bg-img-credits a {
     color: white;
+}
+
+
+.right-content {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content .top {
+    /* flex: 1; */
+    flex: 0 0 33vh;
+    background-color: whitesmoke;
+    padding: 0rem 25rem 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right-content .top .text{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.right-content .bottom {
+    /* flex: 1; */
+    flex: 0 0 33vh;
+    background-color: whitesmoke;
+    padding: 3.5rem 25rem 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.right-content .bottom a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: white;
+    padding: 0.8rem 1.75rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    flex: 0 0 1rem;
+    width: 14rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.create-account:hover {
+    background-color: #789260;
+}
+
+
+.right-content .middle {
+    /* flex: 1; */
+    flex: 0 0 33vh;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 25px 20px -20px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.form-row {
+    display: flex;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 1.25rem;
+    font-weight: 500;
 }
